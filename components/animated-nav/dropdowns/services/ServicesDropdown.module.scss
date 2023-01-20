@@ -1,0 +1,96 @@
+$button-transition-timing: 150ms;
+
+.servicesDropdown {
+  padding: 20px;
+  background: white;
+
+  .serviceTile {
+    min-width: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+      .serviceText {
+
+        .button {
+          color: black;
+        }
+
+        .subtitle {
+          color: black;
+        }
+
+        .buttonArrow {
+          .arrowHead {
+            transform: translateX(3px);
+          }
+    
+          .arrowBody {
+            opacity: 1;
+            transform: scaleX(2);
+          }
+        }
+      }
+    }
+
+    .serviceText {
+      padding-left: 18px;
+
+      .button {
+        font-size: 15px;
+        line-height: 20px;
+        padding: 0;
+        margin: 0;
+        font-weight: 500;
+        width: auto;
+        color: gray;
+        padding: 10px 0px;
+        text-decoration: none;
+        transition: all $button-transition-timing ease-in-out;
+        
+        &:not(:first-of-type) {
+          margin-left: 15px;
+        }
+      }
+
+      .buttonArrow {
+        .arrowIcon {
+          overflow: visible;
+          margin-left: 6px;
+          width: 8px;
+          margin-top: 10px;
+        }
+
+        .arrowHead {
+          stroke: $blue;
+          transform: translateX(0);
+          transition: transform $button-transition-timing ease-in-out;
+        }
+
+        .arrowBody {
+          stroke: $blue;
+          opacity: 0;
+          transform: scaleX(1);
+          transition: transform $button-transition-timing ease-in-out,
+            opacity $button-transition-timing ease-in-out;
+        }
+      }
+
+      .subtitle {
+        font-weight: 300;
+        padding: 0;
+        margin: 0;
+        color: gray;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+
+.rawIcon {
+  object-fit: contain;
+  object-position: center;
+}

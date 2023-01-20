@@ -1,0 +1,30 @@
+.scaffold{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.gutter {
+  flex-grow: 2;
+  flex-shrink: 0;
+  width: 100%;
+  display: flex;
+  flex: 0.5;
+
+  @media (min-width: 1300px) {
+    flex: 0.75
+  }
+
+  @media (min-width: 1500px) {
+    flex: 1.2
+  }
+
+}
+
+.content {
+  flex-grow: 0;
+  width: 100%;
+  display: flex;
+  flex: 5
+}

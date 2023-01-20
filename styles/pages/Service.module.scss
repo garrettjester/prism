@@ -1,0 +1,35 @@
+.servicePage {
+  .serviceHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+
+    h1 {
+      width: 100%;
+      text-align: center;
+      font-size: 50px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+
+  .serviceSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  p {
+    margin-top: 10px;
+    max-width: 600px;
+    font-size: 18px;
+  }
+}

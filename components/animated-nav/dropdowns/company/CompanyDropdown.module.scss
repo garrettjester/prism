@@ -1,0 +1,31 @@
+
+
+.companyDropdown {
+  width:auto;
+}
+
+.optionWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 15px;
+  height: 40px;
+  width: auto;
+
+  p {
+    font-weight: 500;
+    padding-left: 10px;
+    font-size: 15px;
+    color: black;
+    white-space: nowrap;
+    width: fit-content;
+  }
+
+  &:hover {
+    svg {
+      fill: $blue;
+    }
+  }
+
+}

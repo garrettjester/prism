@@ -1,0 +1,108 @@
+$iconWidth: 30px;
+$iconHeight: 30px;
+
+
+.serviceIcon {
+  width: $iconWidth;
+  height: $iconHeight;
+  object-fit: contain;
+  fill: $primary-gradient;
+}
+
+
+.cancelIcon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  fill: gray;
+}
+
+.companyIcon {
+  height: 20px;
+  width: 20px;
+  fill: lightgray;
+  object-fit: contain;
+  transition: all 300ms;
+}
+
+
+.resourcesIcon {
+  height: 30px;
+  width: 30px;
+  fill: lightgray;
+  object-fit: contain;
+  transition: all 300ms;
+}
+
+
+.subResourceIcon {
+  height: 20px;
+  width: 20px;
+  fill: lightgray;
+  object-fit: center;
+  transition: all 300ms;
+}
+
+
+.processIcon {
+  width: 30px;
+  height: 30px;
+  object-fit: center
+}
+
+
+.industryIcon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.cardBackground {
+  fill: linear-gradient(90deg, rgba(110,39,251,1) 0%, rgba(167,79,253,1) 100%)
+}
+
+.advantageIcon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  object-position: center;
+}
+
+
+.landingGraphic {
+  height: 70%;
+  width: 100%
+}
+
+.successIcon {
+  width: 50px;
+  height: 50px;
+
+  path {
+    fill: $blue;
+  }
+}
+
+.graphicOne {
+  position: absolute;
+  height: 120%;
+  transform: translateY(-25%);
+  right: 3em;
+  
+  @media(max-width: 800px) {
+    opacity: 50%;
+  }
+  
+  .classOne {
+    
+  }
+
+  .classTwo {
+   
+  }
+
+  .classThree {
+    
+  }
+}

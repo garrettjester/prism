@@ -1,0 +1,30 @@
+.profileContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  .bodyContent {
+    grid-column: 1 / 4;
+
+    .imageContainer {
+      background: #e2e2e2;
+      height: 400px;
+      width: 100%;
+
+      .profileImage {
+        margin-top: auto;
+        margin-bottom: 0px;
+        top: 100%;
+        transform: translateY(-100%);
+        position: relative;
+        width: 100%;
+        height: 90%;
+      }
+    }
+  }
+
+  .gutterContent {
+    border-left: solid #bdbdbd 1px;
+    display: grid;
+    height: 100%;
+  }
+}

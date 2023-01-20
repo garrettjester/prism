@@ -1,0 +1,29 @@
+.container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+ 
+
+ 
+
+  .item {
+    margin-top: 25px;
+  }
+
+.socialIcon {
+  transition: all 300ms;
+  &:hover {
+    fill: $blue;
+  }
+}
+}
+
+.container::after {
+  content : "";
+  position: absolute;
+  right    : 0;
+  bottom  : 10%;
+  height  : 70%;
+  width   : 1px;  /* or 100px */
+  border-right:1px solid #e2e2e2;
+}

@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+
+  @media (max-width: 800px) {
+    flex-direction: column-reverse;
+  }
+
+  #right {
+    display: none;
+  }
+}
+
+
+

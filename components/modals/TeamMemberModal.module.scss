@@ -1,0 +1,47 @@
+.container {
+  width: 800px;
+  
+  .closeButton {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    background: none;
+    border: none;
+    z-index: 1500;
+    svg {
+      color: 'black'
+    }
+  }
+
+  .imageContainer {
+    background: #e2e2e2;
+    height: 300px;
+    width: 100%;
+
+    .headshot {
+      margin-top: auto;
+      margin-bottom: 0px;
+      top: 100%;
+      transform: translateY(-100%);
+      position: relative;
+      width: 100%;
+      height: 90%;
+    }
+  }
+
+  .textContainer {
+    padding: 30px;
+
+    h3 {
+      margin: 0;
+      padding: 0;
+    }
+
+    .title {
+      margin: 5px 0px;
+      padding: 0;
+      font-weight: 500;
+    }
+  }
+}

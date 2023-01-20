@@ -1,0 +1,107 @@
+
+$duration: 0.1s;
+$padding: 16px 32px;
+
+
+.animatedNav {
+  z-index: 300;
+  position: relative;
+  perspective: 600px;
+
+  .cool > li > a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 20px;
+    display: inline-block;
+    margin: 20px;
+    border-radius: 5;
+    transition: all 200ms;
+  }
+
+  .cool > li:hover {
+    a {
+      color: lighten(black, 60%)
+    }
+  }
+
+  .cool {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .popover {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .dropdownBackground {
+  
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 0 50px 100px rgba(50, 50, 93, .1), 
+    0 15px 35px rgba(50, 50, 93, .15), 0 5px 15px rgba(0, 0, 0,.1);
+    transition: all 0.3s, opacity 0.1s, translate 0.2s;
+    transform-origin: 50% 0%;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+  }
+  
+  .open {
+    opacity: 1;
+  }
+
+
+.dropdown {
+  opacity: 0;
+  position: absolute;
+  overflow: hidden;
+  padding: 20px;
+  top: -20px;
+  border-radius: 2px;
+  transition: all 0.5s;
+  transform: translateY(100px);
+  will-change: transform;
+  display: none;
+}
+
+
+.triggerEnter {
+  .dropdown {
+    display: block;
+    background-color: white
+  }
+}
+
+.triggerEnterActive {
+  .dropdown {
+    opacity: 1;
+    border-radius: 10px;
+  }
+}
+  
+
+
+.arrow {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  display: block;
+  background: white;
+  box-shadow: -3px -3px 5px rgba(80, 90, 120, 0.05);
+  border-radius: 4px 0 0 0;
+  transform: translateY(-50%) rotate(45deg);
+}
+}
+
+

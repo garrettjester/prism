@@ -1,0 +1,64 @@
+.image {
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+}
+
+.articleBody {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  .leftBar {
+    padding-right: 45px;
+    display: inline-block;
+
+    :first-child {
+      position: sticky;
+      top: 30px;
+    }
+  }
+
+  .articleContent {
+    .contentTypeLabel {
+      font-weight: 300;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      display: block;
+    }
+
+    .title {
+      margin-top: 0px;
+      margin-bottom: 13px;
+      font-size: 45px;
+      font-weight: 500;
+    }
+
+    .textBody {
+      
+    }
+  }
+  .sideBar {
+    width: 50px;
+    position: sticky, -webkit-sticky;
+    display: inline-block;
+  }
+}
+
+.rightBar {
+ 
+  padding-left: 45px;
+
+  .content {
+    position: sticky;
+    top: 30px;
+
+    p {
+      font-weight: 300;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      display: block;
+      border-bottom: 1px solid #e2e2e2;
+    }
+  }
+}

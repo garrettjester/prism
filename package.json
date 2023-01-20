@@ -9,9 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formspree/react": "^2.2.4",
+    "@material-ui/core": "^4.12.3",
+    "@portabletext/react": "^1.0.6",
+    "@sanity/client": "^2.23.2",
+    "@sanity/image-url": "^0.140.22",
+    "framer-motion": "^4.1.17",
+    "groq": "^2.15.0",
+    "moment": "^2.29.3",
     "next": "11.0.0",
+    "nprogress": "^0.2.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-animate-height": "^2.0.23",
+    "react-bootstrap": "^2.1.2",
+    "react-div-100vh": "^0.6.0",
+    "react-dom": "17.0.2",
+    "react-hotjar": "^5.0.0",
+    "react-reveal": "^1.2.2",
+    "sass": "^1.49.8"
   },
   "devDependencies": {
     "eslint": "7.28.0",

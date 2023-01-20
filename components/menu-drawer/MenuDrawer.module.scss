@@ -1,0 +1,93 @@
+.sideDrawer {
+  z-index: 15;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 15rem;
+  background: white;
+  box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+
+  .logoLink {
+    align-self: center;
+    margin-top: 40px;
+  }
+
+  .closeButton {
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    background: white;
+    border: none;
+    svg {
+      fill: $secondary;
+    }
+  }
+
+  .brand {
+    align-self: flex-start;
+    
+    margin-bottom: 3rem;
+  }
+
+  .category {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.25px;
+    color: $primary;
+    margin-bottom: 1rem;
+  }
+
+  .navList {
+    padding-top: 1rem;
+    padding-left: 10px;
+    padding-right: auto;
+  }
+
+  .navListItem {
+    padding: 15px 0;
+    font-size: 16px;
+    display: block;
+    color: black;
+    float: left;
+    clear: left;
+
+    &:hover {
+     text-decoration: underline;
+    }
+  }
+
+  .navLink {
+    background: red;
+    justify-self: left;
+    margin-left: 0;
+    padding: 0px;
+
+  }
+
+  .disclaimer {
+  
+    color: gray;
+    font-weight: 200;
+    align-self: center;
+    position: absolute;
+    font-size: 15px;
+    bottom: 10px;
+    text-align: center;
+  }
+}
+
+
+
+.backdrop {
+  z-index: 12;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.35);
+}

@@ -1,0 +1,74 @@
+
+$button-transition-timing: 150ms;
+
+.container {
+  padding: 120px 20px;
+  text-align: center;
+}
+
+
+
+.button {
+  cursor: pointer;
+  width: auto;
+  color: $blue;
+  font-weight: 500;
+  padding: 10px 0px;
+  text-decoration: none;
+  transition: all $button-transition-timing ease-in-out;
+  &:not(:first-of-type) {
+    margin-left: 15px;
+  }
+  
+  &.bgSolid {
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 15px;
+    background-color: $blue;
+    color: #fff;
+    
+    &:hover {
+      background: darken($blue, 70%)
+    }
+  }
+}
+
+.buttonArrow {
+
+  stroke: $blue;
+
+  &.bgSolid {
+    .arrowHead, .arrowBody {
+      stroke: white
+    }
+  }
+
+  .arrowIcon {
+    overflow: visible;
+    margin-left: 6px;
+    width: 8px;
+    margin-top: 10px;
+  }
+  
+  .arrowHead {
+    transform: translateX(0);
+    transition: transform $button-transition-timing ease-in-out;
+  }
+  
+  .arrowBody {
+    opacity: 0;
+    transform: scaleX(1);
+    transition: transform $button-transition-timing ease-in-out, opacity $button-transition-timing ease-in-out;
+  }
+  
+  &:hover {
+    .arrowHead {
+      transform: translateX(3px);
+    }
+    
+    .arrowBody {
+      opacity: 1;
+      transform: scaleX(2);
+    }
+  }
+}
